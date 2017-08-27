@@ -38,7 +38,8 @@ int main()
   
   // Read map data
   Map map;
-  if (!read_map_data("../../data/map_data.txt", map)) {    // FIXME: "../data/map_data.txt"
+  
+  if (!read_map_data("../data/map_data.txt", map)) {    // FIXME: Use the following path for Xcode "../../data/map_data.txt"
     cout << "Error: Could not open map file" << endl;
     return -1;
   }
